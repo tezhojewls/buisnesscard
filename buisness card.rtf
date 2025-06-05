@@ -1,0 +1,204 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>DJ [Your DJ Name] - Digital Business Card</title>\
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">\
+    <style>\
+        /* General Body Styling */\
+        body \{\
+            font-family: 'Montserrat', sans-serif;\
+            margin: 0;\
+            padding: 0;\
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); /* Dark, stylish gradient */\
+            color: #e0e0e0; /* Light text for contrast */\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            min-height: 100vh;\
+            text-align: center;\
+            overflow-x: hidden; /* Prevent horizontal scroll */\
+        \}\
+\
+        /* Card Container */\
+        .card-container \{\
+            background-color: rgba(255, 255, 255, 0.08); /* Slightly transparent white */\
+            border-radius: 20px;\
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow */\
+            padding: 30px;\
+            margin: 20px;\
+            max-width: 400px;\
+            width: 90%;\
+            backdrop-filter: blur(10px); /* Frosted glass effect */\
+            border: 1px solid rgba(255, 255, 255, 0.15); /* Light border */\
+            animation: fadeIn 1s ease-out;\
+        \}\
+\
+        @keyframes fadeIn \{\
+            from \{ opacity: 0; transform: translateY(20px); \}\
+            to \{ opacity: 1; transform: translateY(0); \}\
+        \}\
+\
+        /* Profile Image */\
+        .profile-img \{\
+            width: 120px;\
+            height: 120px;\
+            border-radius: 50%;\
+            object-fit: cover;\
+            border: 4px solid #ff4d4d; /* Accent color border */\
+            margin-bottom: 20px;\
+            transition: transform 0.3s ease;\
+        \}\
+\
+        .profile-img:hover \{\
+            transform: scale(1.05);\
+        \}\
+\
+        /* DJ Name */\
+        h1 \{\
+            font-family: 'Oswald', sans-serif;\
+            font-size: 2.5em;\
+            color: #ff4d4d; /* Accent color */\
+            margin-bottom: 10px;\
+            text-shadow: 0 0 10px rgba(255, 77, 77, 0.5);\
+        \}\
+\
+        /* Tagline/Specialty */\
+        .tagline \{\
+            font-size: 1.1em;\
+            color: #bbb;\
+            margin-bottom: 25px;\
+            font-style: italic;\
+        \}\
+\
+        /* Contact Links */\
+        .contact-links a \{\
+            display: block;\
+            background-color: #ff4d4d; /* Accent color */\
+            color: white;\
+            padding: 12px 20px;\
+            margin: 10px 0;\
+            border-radius: 8px;\
+            text-decoration: none;\
+            font-weight: bold;\
+            font-size: 1.1em;\
+            transition: background-color 0.3s ease, transform 0.2s ease;\
+            box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);\
+        \}\
+\
+        .contact-links a:hover \{\
+            background-color: #e60000; /* Darker accent on hover */\
+            transform: translateY(-3px);\
+        \}\
+\
+        .contact-links a:active \{\
+            transform: translateY(0);\
+        \}\
+\
+        /* Social Media Icons */\
+        .social-icons \{\
+            margin-top: 30px;\
+        \}\
+\
+        .social-icons a \{\
+            display: inline-block;\
+            margin: 0 15px;\
+            font-size: 2.2em;\
+            color: #e0e0e0;\
+            transition: color 0.3s ease, transform 0.2s ease;\
+        \}\
+\
+        .social-icons a:hover \{\
+            color: #ff4d4d; /* Accent color on hover */\
+            transform: translateY(-5px) scale(1.1);\
+        \}\
+\
+        /* Optional: Add a subtle background particle effect (pure CSS) */\
+        .bg-particles \{\
+            position: absolute;\
+            width: 100%;\
+            height: 100%;\
+            top: 0;\
+            left: 0;\
+            z-index: -1;\
+            overflow: hidden;\
+        \}\
+        .bg-particles div \{\
+            position: absolute;\
+            background: rgba(255, 255, 255, 0.05);\
+            border-radius: 50%;\
+            animation: moveParticles 15s infinite ease-in-out alternate;\
+        \}\
+        .bg-particles div:nth-child(1) \{ width: 40px; height: 40px; left: 10%; top: 20%; animation-duration: 18s; \}\
+        .bg-particles div:nth-child(2) \{ width: 60px; height: 60px; left: 80%; top: 70%; animation-duration: 22s; \}\
+        .bg-particles div:nth-child(3) \{ width: 30px; height: 30px; left: 50%; top: 40%; animation-duration: 15s; \}\
+        .bg-particles div:nth-child(4) \{ width: 70px; height: 70px; left: 20%; top: 90%; animation-duration: 20s; \}\
+        .bg-particles div:nth-child(5) \{ width: 50px; height: 50px; left: 90%; top: 10%; animation-duration: 17s; \}\
+        .bg-particles div:nth-child(6) \{ width: 45px; height: 45px; left: 35%; top: 5%; animation-duration: 19s; \}\
+        .bg-particles div:nth-child(7) \{ width: 55px; height: 55px; left: 65%; top: 95%; animation-duration: 21s; \}\
+\
+        @keyframes moveParticles \{\
+            0% \{ transform: translate(0, 0); \}\
+            50% \{ transform: translate(30px, 30px); \}\
+            100% \{ transform: translate(0, 0); \}\
+        \}\
+\
+        /* Responsive adjustments */\
+        @media (max-width: 600px) \{\
+            h1 \{\
+                font-size: 2em;\
+            \}\
+            .contact-links a \{\
+                font-size: 1em;\
+                padding: 10px 15px;\
+            \}\
+            .social-icons a \{\
+                font-size: 1.8em;\
+                margin: 0 10px;\
+            \}\
+        \}\
+    </style>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">\
+</head>\
+<body>\
+    <div class="bg-particles">\
+        <div></div>\
+        <div></div>\
+        <div></div>\
+        <div></div>\
+        <div></div>\
+        <div></div>\
+        <div></div>\
+    </div>\
+\
+    <div class="card-container">\
+        <img src="https://via.placeholder.com/120/FF4D4D/FFFFFF?text=DJ" alt="DJ Profile Picture" class="profile-img">\
+        <h1>DJ [Your DJ Name]</h1>\
+        <p class="tagline">[Your Specialty/Genre] | Electrifying Events</p>\
+\
+        <div class="contact-links">\
+            <a href="tel:+15551234567"><i class="fas fa-phone-alt"></i> Call Now</a>\
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email Me</a>\
+            <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>\
+            <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i> Visit My Website</a>\
+            <a href="#" onclick="alert('Add to contacts functionality coming soon!');"><i class="fas fa-address-book"></i> Save Contact</a>\
+        </div>\
+\
+        <div class="social-icons">\
+            <a href="https://instagram.com/yourdjinstagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>\
+            <a href="https://facebook.com/yourdjfacebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>\
+            <a href="https://soundcloud.com/yourdjsoundcloud" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>\
+            <a href="https://youtube.com/yourdjyoutube" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>\
+            </div>\
+    </div>\
+</body>\
+</html>\
+}
